@@ -1,0 +1,40 @@
+running develop
+Removing /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot-x.egg-link (link to .)
+running egg_info
+writing ../../build/turtlebot_x/turtlebot_x.egg-info/PKG-INFO
+writing dependency_links to ../../build/turtlebot_x/turtlebot_x.egg-info/dependency_links.txt
+writing entry points to ../../build/turtlebot_x/turtlebot_x.egg-info/entry_points.txt
+writing requirements to ../../build/turtlebot_x/turtlebot_x.egg-info/requires.txt
+writing top-level names to ../../build/turtlebot_x/turtlebot_x.egg-info/top_level.txt
+reading manifest file '../../build/turtlebot_x/turtlebot_x.egg-info/SOURCES.txt'
+writing manifest file '../../build/turtlebot_x/turtlebot_x.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/josue/chair_ws/build/turtlebot_x/build
+creating /home/josue/chair_ws/build/turtlebot_x/build/lib
+creating /home/josue/chair_ws/build/turtlebot_x/build/lib/turtlebot_x
+copying turtlebot_x/video_recorder_node.py -> /home/josue/chair_ws/build/turtlebot_x/build/lib/turtlebot_x
+copying turtlebot_x/driving_node.py -> /home/josue/chair_ws/build/turtlebot_x/build/lib/turtlebot_x
+copying turtlebot_x/__init__.py -> /home/josue/chair_ws/build/turtlebot_x/build/lib/turtlebot_x
+running install
+running install_lib
+creating /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x
+copying /home/josue/chair_ws/build/turtlebot_x/build/lib/turtlebot_x/video_recorder_node.py -> /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x
+copying /home/josue/chair_ws/build/turtlebot_x/build/lib/turtlebot_x/driving_node.py -> /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x
+copying /home/josue/chair_ws/build/turtlebot_x/build/lib/turtlebot_x/__init__.py -> /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x
+byte-compiling /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x/video_recorder_node.py to video_recorder_node.cpython-310.pyc
+byte-compiling /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x/driving_node.py to driving_node.cpython-310.pyc
+byte-compiling /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/turtlebot_x -> /home/josue/chair_ws/install/turtlebot_x/share/ament_index/resource_index/packages
+copying package.xml -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x
+copying launch/gazebo.launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch
+copying launch/demo.launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch
+copying urdf/chairbot.urdf -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x
+copying urdf/chairbot.sdf -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x
+running install_egg_info
+Copying ../../build/turtlebot_x/turtlebot_x.egg-info to /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x-0.0.0-py3.10.egg-info
+running install_scripts
+Installing driving_node script to /home/josue/chair_ws/install/turtlebot_x/lib/turtlebot_x
+Installing video_subscriber script to /home/josue/chair_ws/install/turtlebot_x/lib/turtlebot_x
+writing list of installed files to '/home/josue/chair_ws/build/turtlebot_x/install.log'

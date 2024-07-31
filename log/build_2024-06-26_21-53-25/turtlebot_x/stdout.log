@@ -1,0 +1,24 @@
+running develop
+running egg_info
+writing turtlebot_x.egg-info/PKG-INFO
+writing dependency_links to turtlebot_x.egg-info/dependency_links.txt
+writing entry points to turtlebot_x.egg-info/entry_points.txt
+writing requirements to turtlebot_x.egg-info/requires.txt
+writing top-level names to turtlebot_x.egg-info/top_level.txt
+reading manifest file 'turtlebot_x.egg-info/SOURCES.txt'
+writing manifest file 'turtlebot_x.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot-x.egg-link (link to .)
+Installing driving_node script to /home/josue/chair_ws/install/turtlebot_x/lib/turtlebot_x
+Installing video_subscriber script to /home/josue/chair_ws/install/turtlebot_x/lib/turtlebot_x
+
+Installed /home/josue/chair_ws/build/turtlebot_x
+running symlink_data
+symbolically linking /home/josue/chair_ws/build/turtlebot_x/resource/turtlebot_x -> /home/josue/chair_ws/install/turtlebot_x/share/ament_index/resource_index/packages
+symbolically linking /home/josue/chair_ws/build/turtlebot_x/package.xml -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x
+symbolically linking /home/josue/chair_ws/build/turtlebot_x/launch/joystick.launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch
+symbolically linking /home/josue/chair_ws/build/turtlebot_x/launch/gazebo.launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch
+symbolically linking /home/josue/chair_ws/build/turtlebot_x/launch/demo.launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch
+symbolically linking /home/josue/chair_ws/build/turtlebot_x/launch/chairbot_simulation_launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch
+symbolically linking /home/josue/chair_ws/build/turtlebot_x/urdf/chairbot.urdf -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x
+symbolically linking /home/josue/chair_ws/build/turtlebot_x/urdf/chairbot.sdf -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x

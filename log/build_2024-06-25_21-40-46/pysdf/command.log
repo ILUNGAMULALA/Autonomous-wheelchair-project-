@@ -1,0 +1,2 @@
+Invoking command in '/home/josue/chair_ws/build/pysdf': /usr/bin/cmake /home/josue/chair_ws/src/pysdf -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/josue/chair_ws/install/pysdf
+Invoked command in '/home/josue/chair_ws/build/pysdf' returned '1': /usr/bin/cmake /home/josue/chair_ws/src/pysdf -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/josue/chair_ws/install/pysdf

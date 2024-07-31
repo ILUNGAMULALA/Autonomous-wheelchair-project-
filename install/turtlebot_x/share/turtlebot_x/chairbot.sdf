@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version='1.7'>
+  <model name='chairbot'>
+    <pose>0 0 0.5 0 0 0</pose>
+    <link name='base_link'>
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-0.113799 0.000178 0.138094 0 -0 0</pose>
+        <mass>54.4806</mass>
+        <inertia>
+          <ixx>2.37605</ixx>
+          <ixy>-0.000504778</ixy>
+          <ixz>0.73779</ixz>
+          <iyy>2.8287</iyy>
+          <iyz>0.000108266</iyz>
+          <izz>2.86063</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://chair/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0</mu>
+              <mu2>0</mu2>
+              <fdir1>0 0 0</fdir1>
+              <slip1>0</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>0</threshold>
+          </bounce>
+          <contact>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.200000</soft_erp>
+              <kp>10000000000000.000000</kp>
+              <kd>100000000000.000000</kd>
+              <max_vel>-1</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+          </contact>
+        </surface>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://chair/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://chair/materials/scripts/chairbot.material</uri>
+            <name>chairbot/Grey</name>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
+      <kinematic>0</kinematic>
+    </link>
+    <joint name='pneu1_joint' type='revolute'>
+      <pose relative_to='base_link'>0.21158 -0.3 -0.29144 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>pneu1_Link</child>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <effort>1.0</effort>
+        </limit>
+        <dynamics>
+          <damping>0.1</damping>
+          <friction>0</friction>
+        </dynamics>
+        <use_parent_model_frame>true</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='pneu1_Link'>
+      <pose relative_to='pneu1_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0.035001 -0 0 -0 0</pose>
+        <mass>3.627</mass>
+        <inertia>
+          <ixx>0.064382</ixx>
+          <ixy>-4.7098e-09</ixy>
+          <ixz>3.4414e-07</ixz>
+          <iyy>0.12611</iyy>
+          <iyz>8.1766e-09</iyz>
+          <izz>0.064383</izz>
+        </inertia>
+      </inertial>
+      <collision name='pneu1_Link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://chair/meshes/pneu1_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>0</threshold>
+          </bounce>
+          <contact>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.200000</soft_erp>
+              <kp>10000000000000.000000</kp>
+              <kd>100000000000.000000</kd>
+              <max_vel>-1</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+          </contact>
+        </surface>
+        <laser_retro>0</laser_retro> 
+      </collision>
+      <visual name='pneu1_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://chair/meshes/pneu1_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://chair/materials/scripts/chairbot.material</uri>
+            <name>chairbot/Orange</name>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
+      <kinematic>0</kinematic>
+    </link>
+    
+    <joint name='pneu2_joint' type='revolute'>
+      <pose relative_to='base_link'>0.21158 0.3 -0.29144 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>pneu2_Link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <effort>1.0</effort>
+        </limit>
+        <dynamics>
+          <damping>0.1</damping>
+          <friction>0</friction>
+        </dynamics>
+        <use_parent_model_frame>true</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='pneu2_Link'>
+      <pose relative_to='pneu2_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 -0.034999 -0 0 -0 0</pose>
+        <mass>3.627</mass>
+        <inertia>
+          <ixx>0.064382</ixx>
+          <ixy>-9.2929E-09</ixy>
+          <ixz>3.9067E-08</ixz>
+          <iyy>0.12611</iyy>
+          <iyz>4.584E-09</iyz>
+          <izz>0.064383</izz>
+        </inertia>
+      </inertial>
+      <collision name='pneu2_Link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://chair/meshes/pneu2_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>0</threshold>
+          </bounce>
+          <contact>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.200000</soft_erp>
+              <kp>10000000000000.000000</kp>
+              <kd>100000000000.000000</kd>
+              <max_vel>-1</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+          </contact>
+        </surface>
+        <laser_retro>0</laser_retro> 
+      </collision>
+      <visual name='pneu2_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://chair/meshes/pneu2_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://chair/materials/scripts/chairbot.material</uri>
+            <name>chairbot/Orange</name>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
+      <kinematic>0</kinematic>
+    </link>
+    <joint name='pneu3_joint' type='revolute'>
+      <pose relative_to='base_link'>-0.26967 0.33379 -0.38574 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>pneu3_Link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <effort>1.0</effort>
+        </limit>
+        <dynamics>
+          <damping>0.1</damping>
+          <friction>0</friction>
+        </dynamics>
+        <use_parent_model_frame>true</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='pneu3_Link'>
+      <pose relative_to='pneu3_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.000333 -0.05 -0.000363 0 -0 0</pose>
+        <mass>2.8006</mass>
+        <inertia>
+          <ixx>0.020147</ixx>
+          <ixy>-1.4565e-09</ixy>
+          <ixz>7.4949e-07</ixz>
+          <iyy>0.034868</iyy>
+          <iyz>7.7795e-09</iyz>
+          <izz>0.020147</izz>
+        </inertia>
+      </inertial>
+      <collision name='pneu3_Link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://chair/meshes/pneu3_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>0</threshold>
+          </bounce>
+          <contact>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.200000</soft_erp>
+              <kp>10000000000000.000000</kp>
+              <kd>100000000000.000000</kd>
+              <max_vel>-1</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+          </contact>
+        </surface>
+        <laser_retro>0</laser_retro> 
+      </collision>
+      <visual name='pneu3_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://chair/meshes/pneu3_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://chair/materials/scripts/chairbot.material</uri>
+            <name>chairbot/Orange</name>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
+      <kinematic>0</kinematic>
+    </link>
+
+
+    <joint name='pneu4_joint' type='revolute'>
+      <pose relative_to='base_link'>-0.26967 -0.3338 -0.38574 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>pneu4_Link</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <effort>1.0</effort>
+        </limit>
+        <dynamics>
+          <damping>0.1</damping>
+          <friction>0</friction>
+        </dynamics>
+        <use_parent_model_frame>true</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='pneu4_Link'>
+      <pose relative_to='pneu4_joint'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.000333 0.05 -0.000363 0 -0 0</pose>
+        <mass>2.8006</mass>
+        <inertia>
+          <ixx>0.020147</ixx>
+          <ixy>-1.4565e-09</ixy>
+          <ixz>7.4949e-07</ixz>
+          <iyy>0.034868</iyy>
+          <iyz>7.7795e-09</iyz>
+          <izz>0.020147</izz>
+        </inertia>
+      </inertial>
+      <collision name='pneu4_Link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://chair/meshes/pneu4_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>0</threshold>
+          </bounce>
+          <contact>
+            <ode>
+              <soft_cfm>0</soft_cfm>
+              <soft_erp>0.200000</soft_erp>
+              <kp>10000000000000.000000</kp>
+              <kd>100000000000.000000</kd>
+              <max_vel>-1</max_vel>
+              <min_depth>0</min_depth>
+            </ode>
+          </contact>
+        </surface>
+        <laser_retro>0</laser_retro> 
+      </collision>
+      <visual name='pneu4_Link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://chair/meshes/pneu4_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://chair/materials/scripts/chairbot.material</uri>
+            <name>chairbot/Orange</name>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <self_collide>0</self_collide>
+      <kinematic>0</kinematic>
+    </link>
+
+
+    <link name="link">
+      <gravity>false</gravity>
+      <pose>0.128 0.27 0.27 0 0 0</pose>
+      <inertial>
+        <mass>0.1</mass>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.05</size>
+          </box>
+        </geometry>
+      </visual>
+      <sensor name="camera" type="camera">
+        <camera>
+          <horizontal_fov>1.047</horizontal_fov>
+          <image>
+            <width>320</width>
+            <height>240</height>
+          </image>
+          <clip>
+            <near>0.1</near>
+            <far>100</far>
+          </clip>
+        </camera>
+
+        <plugin name="camera_driver" filename="libgazebo_ros_camera.so">
+        <ros>
+        <!-- <namespace>test_cam</namespace> -->
+        <!-- <remapping>image_raw:=image_demo</remapping> -->
+        <!-- <remapping>camera_info:=camera_info_demo</remapping> -->
+        </ros>
+        <!-- camera_name>omit so it defaults to sensor name</camera_name-->
+        <!-- frame_name>omit so it defaults to link name</frameName-->
+        <!-- <hack_baseline>0.07</hack_baseline> -->
+        </plugin>
+        <output_type>sensor_msgs/camera</output_type>
+        <frame_name>base_scan</frame_name>
+        <always_on>1</always_on>
+        <update_rate>30</update_rate>
+        <visualize>true</visualize>
+      </sensor>
+    </link>
+
+    <joint name='camera' type='fixed'>
+      <parent>base_link</parent>
+      <child>link</child>
+      <axis>
+        <xyz>0.128 -0.065 0.104 0 0 0</xyz>
+        <!--<limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>-->
+      </axis>
+    </joint>
+   
+
+    <link name="base_scan">
+    <inertial>
+    <pose>0.069 0.27 -0.20 0 0 0</pose>
+    <inertia>
+
+    <ixx>0.001</ixx>
+    <ixy>0.000</ixy>
+    <ixz>0.000</ixz>
+    <iyy>0.001</iyy>
+    <iyz>0.000</iyz>
+    <izz>0.001</izz>
+    </inertia>
+    <mass>0.114</mass>
+    </inertial>
+
+    <collision name="lidar_sensor_collision">
+    <pose>-0.052 0 0.111 0 0 0</pose>
+    <geometry>
+    <cylinder>
+    <radius>0.0508</radius>
+    <length>0.055</length>
+    </cylinder>
+    </geometry>
+    </collision>
+
+    <visual name="lidar_sensor_visual">
+    <pose>-0.064 0 -0.42 0 0 0</pose>
+    <geometry>
+    <mesh>
+    <uri>model://turtlebot3_waffle/meshes/lds.dae</uri>
+    <scale>0.001 0.001 0.001</scale>
+    </mesh>
+    </geometry>
+    </visual>
+
+
+    <sensor name="hls_lfcd_lds" type="ray">
+    <always_on>true</always_on>
+    <visualize>true</visualize>
+    <pose>-0.064 0 -0.42 0 0 0</pose>
+    <update_rate>5</update_rate>
+    <ray>
+    <scan>
+    <horizontal>
+    <samples>360</samples>
+    <resolution>1.000000</resolution>
+    <min_angle>0.000000</min_angle>
+    <max_angle>6.280000</max_angle>
+    </horizontal>
+    </scan>
+    <range>
+    <min>0.60000</min>
+    <max>15.0</max>
+    <resolution>0.015000</resolution>
+    </range>
+    <noise>
+    <type>gaussian</type>
+    <mean>0.0</mean>
+    <stddev>0.01</stddev>
+    </noise>
+    </ray>
+    <plugin name="turtlebot3_laserscan" filename="libgazebo_ros_ray_sensor.so">
+    <ros>
+    <!-- <namespace>/tb3</namespace> -->
+    <remapping>~/out:=scan</remapping>
+    </ros>
+    <output_type>sensor_msgs/LaserScan</output_type>
+    <frame_name>base_scan</frame_name>
+    </plugin>
+    </sensor>
+    </link>
+
+    <joint name='lidar' type='fixed'>
+      <parent>base_link</parent>
+      <child>base_scan</child>
+      <axis>
+        <xyz>0.064 -0.065 -0.41 0 0 0</xyz>
+        <!--<limit>
+          <lower>0</lower>
+          <upper>0</upper>
+        </limit>-->
+      </axis>
+    </joint>
+    
+    <plugin name="turtlebot3_diff_drive" filename="libgazebo_ros_diff_drive.so">
+
+        <ros>
+          <!-- <namespace>/tb3</namespace> -->
+          <!--since gazebo_plugins publish tf topic in global namespace /tf only and it
+            cannot be remapped like (namespace/tf) through launch arguments -->
+          <remapping>/tf:=tf</remapping>
+        </ros>
+
+        <update_rate>30</update_rate>
+
+        <!-- wheels -->
+        <left_joint>pneu1_joint</left_joint>
+        <right_joint>pneu1_joint</right_joint>
+
+        <!-- kinematics -->
+        <wheel_separation>0.287</wheel_separation>
+        <wheel_diameter>0.066</wheel_diameter>
+
+        <!-- limits -->
+        <max_wheel_torque>20</max_wheel_torque>
+        <max_wheel_acceleration>1.0</max_wheel_acceleration>
+
+        <command_topic>cmd_vel</command_topic>
+
+        <!-- output -->
+        <publish_odom>true</publish_odom>
+        <publish_odom_tf>true</publish_odom_tf>
+        <publish_wheel_tf>false</publish_wheel_tf>
+
+        <odometry_topic>odom</odometry_topic>
+        <odometry_frame>odom</odometry_frame>
+        <robot_base_frame>base_link</robot_base_frame>
+
+    </plugin>
+
+    <plugin name="turtlebot3_joint_state" filename="libgazebo_ros_joint_state_publisher.so">
+        <ros>
+          <!-- <namespace>/tb3</namespace> -->
+          <remapping>~/out:=joint_states</remapping>
+        </ros>
+        <update_rate>30</update_rate>
+        <joint_name>pneu1_joint</joint_name>
+        <joint_name>pneu1_joint</joint_name>
+    </plugin>
+
+
+  </model>
+</sdf>

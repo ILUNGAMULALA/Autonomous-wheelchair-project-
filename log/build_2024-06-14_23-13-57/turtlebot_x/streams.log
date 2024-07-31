@@ -1,0 +1,54 @@
+[0.899s] Invoking command in '/home/josue/chair_ws/build/turtlebot_x': PYTHONPATH=/home/josue/chair_ws/build/turtlebot_x/prefix_override:/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/josue/chair_ws/build/turtlebot_x/build
+[1.274s] running develop
+[1.274s] /home/josue/.local/lib/python3.10/site-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.274s] !!
+[1.274s] 
+[1.274s]         ********************************************************************************
+[1.275s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.275s]         Instead, use pypa/build, pypa/installer or other
+[1.275s]         standards-based tools.
+[1.275s] 
+[1.275s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.275s]         ********************************************************************************
+[1.275s] 
+[1.276s] !!
+[1.276s]   easy_install.initialize_options(self)
+[1.540s] Removing /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot-x.egg-link (link to .)
+[1.582s] Invoked command in '/home/josue/chair_ws/build/turtlebot_x' returned '0': PYTHONPATH=/home/josue/chair_ws/build/turtlebot_x/prefix_override:/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/josue/chair_ws/build/turtlebot_x/build
+[1.584s] Invoking command in '/home/josue/chair_ws/src/turtlebot_x': PYTHONPATH=/home/josue/chair_ws/build/turtlebot_x/prefix_override:/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/turtlebot_x build --build-base /home/josue/chair_ws/build/turtlebot_x/build install --record /home/josue/chair_ws/build/turtlebot_x/install.log --single-version-externally-managed install_data --force
+[1.868s] running egg_info
+[1.887s] writing ../../build/turtlebot_x/turtlebot_x.egg-info/PKG-INFO
+[1.888s] writing dependency_links to ../../build/turtlebot_x/turtlebot_x.egg-info/dependency_links.txt
+[1.888s] writing entry points to ../../build/turtlebot_x/turtlebot_x.egg-info/entry_points.txt
+[1.888s] writing requirements to ../../build/turtlebot_x/turtlebot_x.egg-info/requires.txt
+[1.888s] writing top-level names to ../../build/turtlebot_x/turtlebot_x.egg-info/top_level.txt
+[1.926s] reading manifest file '../../build/turtlebot_x/turtlebot_x.egg-info/SOURCES.txt'
+[1.927s] writing manifest file '../../build/turtlebot_x/turtlebot_x.egg-info/SOURCES.txt'
+[1.927s] running build
+[1.927s] running build_py
+[1.928s] copying turtlebot_x/video_recorder_node.py -> /home/josue/chair_ws/build/turtlebot_x/build/lib/turtlebot_x
+[1.928s] copying turtlebot_x/driving_node.py -> /home/josue/chair_ws/build/turtlebot_x/build/lib/turtlebot_x
+[1.928s] copying turtlebot_x/__init__.py -> /home/josue/chair_ws/build/turtlebot_x/build/lib/turtlebot_x
+[1.929s] running install
+[1.935s] running install_lib
+[1.954s] creating /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x
+[1.955s] copying /home/josue/chair_ws/build/turtlebot_x/build/lib/turtlebot_x/video_recorder_node.py -> /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x
+[1.955s] copying /home/josue/chair_ws/build/turtlebot_x/build/lib/turtlebot_x/driving_node.py -> /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x
+[1.955s] copying /home/josue/chair_ws/build/turtlebot_x/build/lib/turtlebot_x/__init__.py -> /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x
+[1.956s] byte-compiling /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x/video_recorder_node.py to video_recorder_node.cpython-310.pyc
+[1.956s] byte-compiling /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x/driving_node.py to driving_node.cpython-310.pyc
+[1.957s] byte-compiling /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x/__init__.py to __init__.cpython-310.pyc
+[1.957s] running install_data
+[1.958s] copying resource/turtlebot_x -> /home/josue/chair_ws/install/turtlebot_x/share/ament_index/resource_index/packages
+[1.958s] copying package.xml -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x
+[1.958s] copying launch/gazebo.launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch
+[1.958s] copying launch/demo.launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch
+[1.959s] copying urdf/chairbot.urdf -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x
+[1.959s] copying urdf/chairbot.sdf -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x
+[1.959s] running install_egg_info
+[1.979s] Copying ../../build/turtlebot_x/turtlebot_x.egg-info to /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x-0.0.0-py3.10.egg-info
+[1.986s] running install_scripts
+[2.167s] Installing driving_node script to /home/josue/chair_ws/install/turtlebot_x/lib/turtlebot_x
+[2.167s] Installing video_subscriber script to /home/josue/chair_ws/install/turtlebot_x/lib/turtlebot_x
+[2.168s] writing list of installed files to '/home/josue/chair_ws/build/turtlebot_x/install.log'
+[2.202s] Invoked command in '/home/josue/chair_ws/src/turtlebot_x' returned '0': PYTHONPATH=/home/josue/chair_ws/build/turtlebot_x/prefix_override:/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/turtlebot_x build --build-base /home/josue/chair_ws/build/turtlebot_x/build install --record /home/josue/chair_ws/build/turtlebot_x/install.log --single-version-externally-managed install_data --force

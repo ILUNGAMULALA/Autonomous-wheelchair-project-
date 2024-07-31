@@ -1,0 +1,33 @@
+[1.075s] Invoking command in '/home/josue/chair_ws/src/turtlebot_x': PYTHONPATH=/home/josue/chair_ws/build/turtlebot_x/prefix_override:/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/turtlebot_x build --build-base /home/josue/chair_ws/build/turtlebot_x/build install --record /home/josue/chair_ws/build/turtlebot_x/install.log --single-version-externally-managed install_data
+[1.530s] running egg_info
+[1.560s] writing ../../build/turtlebot_x/turtlebot_x.egg-info/PKG-INFO
+[1.561s] writing dependency_links to ../../build/turtlebot_x/turtlebot_x.egg-info/dependency_links.txt
+[1.562s] writing entry points to ../../build/turtlebot_x/turtlebot_x.egg-info/entry_points.txt
+[1.562s] writing requirements to ../../build/turtlebot_x/turtlebot_x.egg-info/requires.txt
+[1.562s] writing top-level names to ../../build/turtlebot_x/turtlebot_x.egg-info/top_level.txt
+[1.613s] reading manifest file '../../build/turtlebot_x/turtlebot_x.egg-info/SOURCES.txt'
+[1.615s] writing manifest file '../../build/turtlebot_x/turtlebot_x.egg-info/SOURCES.txt'
+[1.615s] running build
+[1.615s] running build_py
+[1.615s] copying turtlebot_x/video_recorder_node.py -> /home/josue/chair_ws/build/turtlebot_x/build/lib/turtlebot_x
+[1.616s] copying turtlebot_x/driving_node.py -> /home/josue/chair_ws/build/turtlebot_x/build/lib/turtlebot_x
+[1.616s] copying turtlebot_x/__init__.py -> /home/josue/chair_ws/build/turtlebot_x/build/lib/turtlebot_x
+[1.617s] running install
+[1.627s] running install_lib
+[1.659s] running install_data
+[1.659s] copying resource/turtlebot_x -> /home/josue/chair_ws/install/turtlebot_x/share/ament_index/resource_index/packages
+[1.659s] copying package.xml -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x
+[1.659s] copying launch/joystick.launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch
+[1.660s] copying launch/gazebo.launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch
+[1.660s] copying launch/demo.launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch
+[1.660s] copying launch/chairbot_simulation_launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch
+[1.660s] copying urdf/chairbot.urdf -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x
+[1.661s] copying urdf/chairbot.sdf -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x
+[1.661s] running install_egg_info
+[1.696s] removing '/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x-0.0.0-py3.10.egg-info' (and everything under it)
+[1.696s] Copying ../../build/turtlebot_x/turtlebot_x.egg-info to /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x-0.0.0-py3.10.egg-info
+[1.696s] running install_scripts
+[1.951s] Installing driving_node script to /home/josue/chair_ws/install/turtlebot_x/lib/turtlebot_x
+[1.951s] Installing video_subscriber script to /home/josue/chair_ws/install/turtlebot_x/lib/turtlebot_x
+[1.952s] writing list of installed files to '/home/josue/chair_ws/build/turtlebot_x/install.log'
+[1.996s] Invoked command in '/home/josue/chair_ws/src/turtlebot_x' returned '0': PYTHONPATH=/home/josue/chair_ws/build/turtlebot_x/prefix_override:/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/turtlebot_x build --build-base /home/josue/chair_ws/build/turtlebot_x/build install --record /home/josue/chair_ws/build/turtlebot_x/install.log --single-version-externally-managed install_data

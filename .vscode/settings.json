@@ -1,0 +1,18 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/daniel/ATG_projects/chair_ws/install/turtlebot_x/lib/python3.10/site-packages",
+        "/home/daniel/ros2_ws/install/teleop_twist_keyboard/lib/python3.10/site-packages",
+        "/home/daniel/ros2_ws/install/self_driving_car_pkg/lib/python3.10/site-packages",
+        "/home/daniel/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/daniel/ATG_projects/chair_ws/install/turtlebot_x/lib/python3.10/site-packages",
+        "/home/daniel/ros2_ws/install/teleop_twist_keyboard/lib/python3.10/site-packages",
+        "/home/daniel/ros2_ws/install/self_driving_car_pkg/lib/python3.10/site-packages",
+        "/home/daniel/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

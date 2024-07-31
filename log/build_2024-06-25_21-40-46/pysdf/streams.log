@@ -1,0 +1,41 @@
+[0.040s] Invoking command in '/home/josue/chair_ws/build/pysdf': /usr/bin/cmake /home/josue/chair_ws/src/pysdf -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/josue/chair_ws/install/pysdf
+[0.326s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.326s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.326s]   CMake.
+[0.326s] 
+[0.327s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.327s]   CMake that the project does not need compatibility with older versions.
+[0.327s] 
+[0.327s] [0m
+[1.313s] -- The C compiler identification is GNU 11.4.0
+[2.350s] -- The CXX compiler identification is GNU 11.4.0
+[2.425s] -- Detecting C compiler ABI info
+[2.685s] -- Detecting C compiler ABI info - done
+[2.696s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.696s] -- Detecting C compile features
+[2.708s] -- Detecting C compile features - done
+[2.721s] -- Detecting CXX compiler ABI info
+[2.886s] -- Detecting CXX compiler ABI info - done
+[2.897s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.897s] -- Detecting CXX compile features
+[2.898s] -- Detecting CXX compile features - done
+[2.949s] [31mCMake Error at CMakeLists.txt:7 (find_package):
+[2.949s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[2.949s]   asked CMake to find a package configuration file provided by "catkin", but
+[2.949s]   CMake did not find one.
+[2.950s] 
+[2.950s]   Could not find a package configuration file provided by "catkin" with any
+[2.950s]   of the following names:
+[2.950s] 
+[2.950s]     catkinConfig.cmake
+[2.950s]     catkin-config.cmake
+[2.950s] 
+[2.950s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[2.950s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[2.950s]   provides a separate development package or SDK, be sure it has been
+[2.950s]   installed.
+[2.950s] 
+[2.950s] [0m
+[2.950s] -- Configuring incomplete, errors occurred!
+[2.950s] See also "/home/josue/chair_ws/build/pysdf/CMakeFiles/CMakeOutput.log".
+[2.953s] Invoked command in '/home/josue/chair_ws/build/pysdf' returned '1': /usr/bin/cmake /home/josue/chair_ws/src/pysdf -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/josue/chair_ws/install/pysdf

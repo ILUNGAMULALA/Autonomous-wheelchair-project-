@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/josue/colcon_ws/install/ign_rviz_plugins/include/**",
+        "/home/josue/colcon_ws/install/ign_rviz_common/include/**",
+        "/home/josue/ws/install/image_geometry/include/**",
+        "/home/josue/ws/install/gazebo_msgs/include/**",
+        "/home/josue/ws/install/cv_bridge/include/**",
+        "/opt/ros/iron/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

@@ -1,0 +1,3 @@
+[console_scripts]
+driving_node = turtlebot_x.driving_node:main
+video_subscriber = turtlebot_x.video_recorder_node:main

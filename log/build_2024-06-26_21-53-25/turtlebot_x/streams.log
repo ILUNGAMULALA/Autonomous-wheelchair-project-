@@ -1,0 +1,39 @@
+[0.931s] Invoking command in '/home/josue/chair_ws/build/turtlebot_x': PYTHONPATH=/home/josue/chair_ws/build/turtlebot_x/prefix_override:/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/josue/chair_ws/build/turtlebot_x/build --no-deps symlink_data --force
+[1.580s] running develop
+[1.580s] /home/josue/.local/lib/python3.10/site-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.580s] !!
+[1.581s] 
+[1.581s]         ********************************************************************************
+[1.581s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.581s]         Instead, use pypa/build, pypa/installer or other
+[1.581s]         standards-based tools.
+[1.581s] 
+[1.581s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.582s]         ********************************************************************************
+[1.582s] 
+[1.582s] !!
+[1.582s]   easy_install.initialize_options(self)
+[2.070s] running egg_info
+[2.102s] writing turtlebot_x.egg-info/PKG-INFO
+[2.103s] writing dependency_links to turtlebot_x.egg-info/dependency_links.txt
+[2.103s] writing entry points to turtlebot_x.egg-info/entry_points.txt
+[2.104s] writing requirements to turtlebot_x.egg-info/requires.txt
+[2.104s] writing top-level names to turtlebot_x.egg-info/top_level.txt
+[2.172s] reading manifest file 'turtlebot_x.egg-info/SOURCES.txt'
+[2.174s] writing manifest file 'turtlebot_x.egg-info/SOURCES.txt'
+[2.211s] running build_ext
+[2.211s] Creating /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot-x.egg-link (link to .)
+[2.213s] Installing driving_node script to /home/josue/chair_ws/install/turtlebot_x/lib/turtlebot_x
+[2.213s] Installing video_subscriber script to /home/josue/chair_ws/install/turtlebot_x/lib/turtlebot_x
+[2.213s] 
+[2.213s] Installed /home/josue/chair_ws/build/turtlebot_x
+[2.214s] running symlink_data
+[2.214s] symbolically linking /home/josue/chair_ws/build/turtlebot_x/resource/turtlebot_x -> /home/josue/chair_ws/install/turtlebot_x/share/ament_index/resource_index/packages
+[2.214s] symbolically linking /home/josue/chair_ws/build/turtlebot_x/package.xml -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x
+[2.214s] symbolically linking /home/josue/chair_ws/build/turtlebot_x/launch/joystick.launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch
+[2.215s] symbolically linking /home/josue/chair_ws/build/turtlebot_x/launch/gazebo.launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch
+[2.215s] symbolically linking /home/josue/chair_ws/build/turtlebot_x/launch/demo.launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch
+[2.215s] symbolically linking /home/josue/chair_ws/build/turtlebot_x/launch/chairbot_simulation_launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch
+[2.215s] symbolically linking /home/josue/chair_ws/build/turtlebot_x/urdf/chairbot.urdf -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x
+[2.215s] symbolically linking /home/josue/chair_ws/build/turtlebot_x/urdf/chairbot.sdf -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x
+[2.277s] Invoked command in '/home/josue/chair_ws/build/turtlebot_x' returned '0': PYTHONPATH=/home/josue/chair_ws/build/turtlebot_x/prefix_override:/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/josue/chair_ws/build/turtlebot_x/build --no-deps symlink_data --force

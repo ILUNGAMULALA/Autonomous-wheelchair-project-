@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="chairbot" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!-- Define materials -->
+  <material name="black">
+    <color rgba="0.0 0.0 0.0 1.0"/>
+  </material>
+
+  <material name="dark">
+    <color rgba="0.3 0.3 0.3 1.0"/>
+  </material>
+
+  <material name="light_black">
+    <color rgba="0.4 0.4 0.4 1.0"/>
+  </material>
+
+  <material name="blue">
+    <color rgba="0.0 0.0 0.8 1.0"/>
+  </material>
+
+  <material name="green">
+    <color rgba="0.0 0.8 0.0 1.0"/>
+  </material>
+
+  <material name="grey">
+    <color rgba="0.5 0.5 0.5 1.0"/>
+  </material>
+
+  <material name="orange">
+    <color rgba="1.0 0.4235 0.0392 1.0"/>
+  </material>
+
+  <material name="brown">
+    <color rgba="0.8706 0.8118 0.7647 1.0"/>
+  </material>
+
+  <material name="red">
+    <color rgba="0.8 0.0 0.0 1.0"/>
+  </material>
+
+  <material name="white">
+    <color rgba="1.0 1.0 1.0 1.0"/>
+  </material>
+
+
+  <!-- Base link -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.11379893668926 0.000178018474144392 0.138093939812677" rpy="0 0 0"/>
+      <mass value="54.4806116280377"/>
+      <inertia ixx="2.37604544670676" ixy="-0.000504778026169325" ixz="0.737789581049573"
+               iyy="2.8286967550131" iyz="0.000108266263762557" izz="2.86063434025348"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://turtlebot_x/meshes/base_link.dae"/>
+      </geometry>
+      <material name="grey"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://turtlebot_x/meshes/base_link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Pneu1 link -->
+  <link name="pneu1_Link">
+    <inertial>
+      <origin xyz="5.2253E-08 0.035001 -4.5333E-07" rpy="0 0 0"/>
+      <mass value="3.627"/>
+      <inertia ixx="0.064382" ixy="-4.7098E-09" ixz="3.4414E-07"
+               iyy="0.12611" iyz="8.1766E-09" izz="0.064383"/>
+    </inertial>
+    <visual>
+      <origin xyz="5.2253E-08 0.035001 -4.5333E-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://turtlebot_x/meshes/pneu1_Link.dae"/>
+      </geometry>
+      <material name="orange"/>
+    </visual>
+    <collision>
+      <origin xyz="5.2253E-08 0.035001 -4.5333E-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://turtlebot_x/meshes/pneu1_Link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="pneu1_joint" type="revolute">
+    <origin xyz="0.21158 -0.3 -0.29144" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="pneu1_Link"/>
+    <axis xyz="0 -1 0"/>
+    <limit effort="1000.0" velocity="1.0"/>
+    <dynamics damping="0.01" friction="0.01"/>
+  </joint>
+
+  <!-- Pneu2 link -->
+  <link name="pneu2_Link">
+    <inertial>
+      <origin xyz="2.7071E-07 -0.034999 -3.8705E-07" rpy="1.57 0 0"/>
+      <mass value="3.627"/>
+      <inertia ixx="0.064382" ixy="-9.2929E-09" ixz="3.9067E-08"
+               iyy="0.12611" iyz="4.584E-09" izz="0.064383"/>
+    </inertial>
+    <visual>
+      <origin xyz="2.7071E-07 -0.034999 -3.8705E-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://turtlebot_x/meshes/pneu2_Link.dae"/>
+      </geometry>
+      <material name="orange"/>
+    </visual>
+    <collision>
+      <origin xyz="2.7071E-07 -0.034999 -3.8705E-07" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://turtlebot_x/meshes/pneu2_Link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="pneu2_joint" type="revolute">
+    <origin xyz="0.21158 0.3 -0.29144" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="pneu2_Link"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="1000.0" velocity="1.0"/>
+    <dynamics damping="0.01" friction="0.01"/>
+  </joint>
+
+  <!-- IMU link -->
+  <link name="imu_link"/>
+
+  <joint name="imu_joint" type="fixed">
+    <origin xyz="0.0 0 0.068" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+  </joint>
+
+  <!-- Pneu3 link -->
+  <link name="pneu3_Link">
+    <inertial>
+      <origin xyz="-0.00033284 -0.05 -0.00036323" rpy="0 0 0"/>
+      <mass value="2.8006"/>
+      <inertia ixx="0.020147" ixy="-1.4565E-09" ixz="7.4949E-07"
+               iyy="0.034868" iyz="7.7795E-09" izz="0.020147"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.00033284 -0.05 -0.00036323" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://turtlebot_x/meshes/pneu3_Link.dae"/>
+      </geometry>
+      <material name="orange"/>
+    </visual>
+    <collision>
+      <origin xyz="-0.00033284 -0.05 -0.00036323" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://turtlebot_x/meshes/pneu3_Link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="pneu3_joint" type="revolute">
+    <origin xyz="-0.26967 0.33379 -0.38574" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="pneu3_Link"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="1000.0" velocity="1.0"/>
+    <dynamics damping="0.01" friction="0.01"/>
+  </joint>
+
+  <!-- Pneu4 link -->
+  <link name="pneu4_Link">
+    <inertial>
+      <origin xyz="0.000333 0.05 -0.000363" rpy="0 0 0"/>
+      <mass value="3.0"/>
+      <inertia ixx="0.020147" ixy="-1.4565e-09" ixz="7.4949e-07"
+               iyy="0.034868" iyz="7.7795e-09" izz="0.020147"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.000333 0.05 -0.000363" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://turtlebot_x/meshes/pneu4_Link.dae"/>
+      </geometry>
+      <material name="orange"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://turtlebot_x/meshes/pneu4_Link.dae"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="pneu4_joint" type="revolute">
+    <origin xyz="-0.26967 -0.3338 -0.38574" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="pneu4_Link"/>
+    <axis xyz="0 -1 0"/>
+    <limit effort="1000.0" velocity="1.0"/>
+    <dynamics damping="0.01" friction="0.01"/>
+  </joint>
+
+  <!-- Base scan link -->
+  <link name="base_scan">
+    <inertial>
+      <mass value="0.114"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0"
+               iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://turtlebot3_gazebo/models/turtlebot3_common/meshes/lds.dae" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="dark"/>
+    </visual>
+    <collision>
+      <origin xyz="0.015 0 -0.0065" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.0315" radius="0.055"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="scan_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="base_scan"/>
+    <origin xyz="0.1 0 0.175" rpy="0 0 0"/>
+  </joint>
+
+</robot>

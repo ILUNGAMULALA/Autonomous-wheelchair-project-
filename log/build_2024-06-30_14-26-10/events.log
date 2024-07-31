@@ -1,0 +1,70 @@
+[0.000000] (-) TimerEvent: {}
+[0.000341] (turtlebot_x) JobQueued: {'identifier': 'turtlebot_x', 'dependencies': OrderedDict()}
+[0.000393] (turtlebot_x) JobStarted: {'identifier': 'turtlebot_x'}
+[0.099155] (-) TimerEvent: {}
+[0.199416] (-) TimerEvent: {}
+[0.299698] (-) TimerEvent: {}
+[0.400009] (-) TimerEvent: {}
+[0.500332] (-) TimerEvent: {}
+[0.600719] (-) TimerEvent: {}
+[0.701088] (-) TimerEvent: {}
+[0.801375] (-) TimerEvent: {}
+[0.901666] (-) TimerEvent: {}
+[1.001962] (-) TimerEvent: {}
+[1.102350] (-) TimerEvent: {}
+[1.202669] (-) TimerEvent: {}
+[1.303043] (-) TimerEvent: {}
+[1.323577] (turtlebot_x) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/turtlebot_x', 'build', '--build-base', '/home/josue/chair_ws/build/turtlebot_x/build', 'install', '--record', '/home/josue/chair_ws/build/turtlebot_x/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/josue/chair_ws/src/turtlebot_x', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'fr_CA:en', 'USER': 'josue', 'LC_TIME': 'ln_CD', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/josue/colcon_ws/install/ign_rviz_plugins/lib:/home/josue/colcon_ws/install/ign_rviz_common/lib:/home/josue/ws/install/image_geometry/lib:/home/josue/ws/install/gazebo_msgs/lib:/home/josue/ws/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'HOME': '/home/josue', 'OLDPWD': '/home/josue', 'DESKTOP_SESSION': 'ubuntu', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ln_CD', 'SYSTEMD_EXEC_PID': '19886', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/josue/colcon_ws/install:/home/josue/chair_ros2_ws/install:/home/josue/second_ros2_ws/install:/home/josue/ws/install:/home/josue/ros2_ws/install:/home/josue/chair_ws/install', 'ROS_DISTRO': 'iron', 'LOGNAME': 'josue', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'josue', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo-11/models:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'PATH': '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/josue-ThinkPad-T450s:@/tmp/.ICE-unix/17898,unix/josue-ThinkPad-T450s:/tmp/.ICE-unix/17898', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ln_CD', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/9a3e87b1_06bb_4056_b3b1_1175253b2fbc', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'fr_CA.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ln_CD', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.DL7PQ2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.120', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/josue/ros2_ws/install/my_robot_controller:/home/josue/ros2_ws/install/joystick_ros2:/home/josue/colcon_ws/install/ign_rviz:/home/josue/colcon_ws/install/ign_rviz_plugins:/home/josue/colcon_ws/install/ign_rviz_common:/home/josue/chair_ros2_ws/install/my_robot:/home/josue/second_ros2_ws/install/urdf_tutorial_r2d2:/home/josue/ws/install/vision_opencv:/home/josue/ws/install/opencv_tests:/home/josue/ws/install/image_geometry:/home/josue/ws/install/gazebo_msgs:/home/josue/ws/install/gazebo_dev:/home/josue/ws/install/cv_bridge:/home/josue/chair_ws/install/turtlebot_x:/opt/ros/iron', 'SHELL': '/bin/bash', 'LC_NAME': 'ln_CD', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ln_CD', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-11:', 'LC_IDENTIFICATION': 'ln_CD', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/josue/chair_ws/build/turtlebot_x', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/home/josue/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/josue/chair_ws/build/turtlebot_x/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages:/home/josue/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/josue/ros2_ws/install/joystick_ros2/lib/python3.10/site-packages:/home/josue/chair_ros2_ws/build/my_robot:/home/josue/chair_ros2_ws/install/my_robot/lib/python3.10/site-packages:/home/josue/second_ros2_ws/install/urdf_tutorial_r2d2/lib/python3.10/site-packages:/home/josue/ws/build/opencv_tests:/home/josue/ws/install/opencv_tests/lib/python3.10/site-packages:/home/josue/ws/install/image_geometry/lib/python3.10/site-packages:/home/josue/ws/install/gazebo_msgs/lib/python3.10/site-packages:/home/josue/ws/install/cv_bridge/lib/python3.10/site-packages:/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'LC_NUMERIC': 'ln_CD', 'LC_PAPER': 'ln_CD', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/josue/colcon_ws/install/ign_rviz:/home/josue/colcon_ws/install/ign_rviz_plugins:/home/josue/colcon_ws/install/ign_rviz_common:/home/josue/ws/install/vision_opencv:/home/josue/ws/install/image_geometry:/home/josue/ws/install/gazebo_msgs:/home/josue/ws/install/gazebo_dev:/home/josue/ws/install/cv_bridge'}, 'shell': False}
+[1.403152] (-) TimerEvent: {}
+[1.503445] (-) TimerEvent: {}
+[1.603732] (-) TimerEvent: {}
+[1.681137] (turtlebot_x) StdoutLine: {'line': b'running egg_info\n'}
+[1.703826] (-) TimerEvent: {}
+[1.780072] (turtlebot_x) StdoutLine: {'line': b'writing ../../build/turtlebot_x/turtlebot_x.egg-info/PKG-INFO\n'}
+[1.803931] (-) TimerEvent: {}
+[1.807635] (turtlebot_x) StdoutLine: {'line': b'writing dependency_links to ../../build/turtlebot_x/turtlebot_x.egg-info/dependency_links.txt\n'}
+[1.832624] (turtlebot_x) StdoutLine: {'line': b'writing entry points to ../../build/turtlebot_x/turtlebot_x.egg-info/entry_points.txt\n'}
+[1.833204] (turtlebot_x) StdoutLine: {'line': b'writing requirements to ../../build/turtlebot_x/turtlebot_x.egg-info/requires.txt\n'}
+[1.834148] (turtlebot_x) StdoutLine: {'line': b'writing top-level names to ../../build/turtlebot_x/turtlebot_x.egg-info/top_level.txt\n'}
+[1.880728] (turtlebot_x) StdoutLine: {'line': b"reading manifest file '../../build/turtlebot_x/turtlebot_x.egg-info/SOURCES.txt'\n"}
+[1.892491] (turtlebot_x) StdoutLine: {'line': b"writing manifest file '../../build/turtlebot_x/turtlebot_x.egg-info/SOURCES.txt'\n"}
+[1.892888] (turtlebot_x) StdoutLine: {'line': b'running build\n'}
+[1.893153] (turtlebot_x) StdoutLine: {'line': b'running build_py\n'}
+[1.893323] (turtlebot_x) StdoutLine: {'line': b'copying turtlebot_x/video_recorder_node.py -> /home/josue/chair_ws/build/turtlebot_x/build/lib/turtlebot_x\n'}
+[1.893497] (turtlebot_x) StdoutLine: {'line': b'copying turtlebot_x/driving_node.py -> /home/josue/chair_ws/build/turtlebot_x/build/lib/turtlebot_x\n'}
+[1.904046] (-) TimerEvent: {}
+[1.909915] (turtlebot_x) StdoutLine: {'line': b'copying turtlebot_x/__init__.py -> /home/josue/chair_ws/build/turtlebot_x/build/lib/turtlebot_x\n'}
+[1.920363] (turtlebot_x) StdoutLine: {'line': b'running install\n'}
+[1.927731] (turtlebot_x) StdoutLine: {'line': b'running install_lib\n'}
+[1.977353] (turtlebot_x) StdoutLine: {'line': b'running install_data\n'}
+[1.977577] (turtlebot_x) StdoutLine: {'line': b'copying resource/turtlebot_x -> /home/josue/chair_ws/install/turtlebot_x/share/ament_index/resource_index/packages\n'}
+[1.980046] (turtlebot_x) StdoutLine: {'line': b'copying package.xml -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x\n'}
+[1.985491] (turtlebot_x) StdoutLine: {'line': b'copying launch/localization_launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch\n'}
+[1.985855] (turtlebot_x) StdoutLine: {'line': b'copying launch/unique_multi_chairbot_simulation_launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch\n'}
+[1.986089] (turtlebot_x) StdoutLine: {'line': b'copying launch/joystick.launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch\n'}
+[1.986304] (turtlebot_x) StdoutLine: {'line': b'copying launch/gazebo.launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch\n'}
+[1.986512] (turtlebot_x) StdoutLine: {'line': b'copying launch/online_sync_launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch\n'}
+[1.986689] (turtlebot_x) StdoutLine: {'line': b'copying launch/demo.launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch\n'}
+[1.986868] (turtlebot_x) StdoutLine: {'line': b'copying launch/slam_launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch\n'}
+[1.987055] (turtlebot_x) StdoutLine: {'line': b'copying launch/rviz_launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch\n'}
+[1.987235] (turtlebot_x) StdoutLine: {'line': b'copying launch/navigation_launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch\n'}
+[1.987426] (turtlebot_x) StdoutLine: {'line': b'copying launch/cloned_multi_chairbot_simulation_launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch\n'}
+[1.987649] (turtlebot_x) StdoutLine: {'line': b'copying launch/chairbot_simulation_launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch\n'}
+[1.987878] (turtlebot_x) StdoutLine: {'line': b'copying launch/bringup_launch.py -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch\n'}
+[1.988155] (turtlebot_x) StdoutLine: {'line': b'copying urdf/chairbot.urdf -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x\n'}
+[2.001928] (turtlebot_x) StdoutLine: {'line': b'copying urdf/chairbot.sdf -> /home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x\n'}
+[2.004119] (-) TimerEvent: {}
+[2.011475] (turtlebot_x) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.035163] (turtlebot_x) StdoutLine: {'line': b"removing '/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.050733] (turtlebot_x) StdoutLine: {'line': b'Copying ../../build/turtlebot_x/turtlebot_x.egg-info to /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot_x-0.0.0-py3.10.egg-info\n'}
+[2.056535] (turtlebot_x) StdoutLine: {'line': b'running install_scripts\n'}
+[2.104230] (-) TimerEvent: {}
+[2.204491] (-) TimerEvent: {}
+[2.294023] (turtlebot_x) StdoutLine: {'line': b'Installing driving_node script to /home/josue/chair_ws/install/turtlebot_x/lib/turtlebot_x\n'}
+[2.294308] (turtlebot_x) StdoutLine: {'line': b'Installing video_subscriber script to /home/josue/chair_ws/install/turtlebot_x/lib/turtlebot_x\n'}
+[2.294850] (turtlebot_x) StdoutLine: {'line': b"writing list of installed files to '/home/josue/chair_ws/build/turtlebot_x/install.log'\n"}
+[2.304610] (-) TimerEvent: {}
+[2.335401] (turtlebot_x) CommandEnded: {'returncode': 0}
+[2.404728] (-) TimerEvent: {}
+[2.490025] (turtlebot_x) JobEnded: {'identifier': 'turtlebot_x', 'rc': 0}
+[2.491083] (-) EventReactorShutdown: {}

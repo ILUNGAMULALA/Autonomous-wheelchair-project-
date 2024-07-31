@@ -1,0 +1,81 @@
+[0.000000] (-) TimerEvent: {}
+[0.000175] (pysdf) JobQueued: {'identifier': 'pysdf', 'dependencies': OrderedDict()}
+[0.000211] (turtlebot_x) JobQueued: {'identifier': 'turtlebot_x', 'dependencies': OrderedDict()}
+[0.000353] (pysdf) JobStarted: {'identifier': 'pysdf'}
+[0.018483] (turtlebot_x) JobStarted: {'identifier': 'turtlebot_x'}
+[0.038786] (pysdf) JobProgress: {'identifier': 'pysdf', 'progress': 'cmake'}
+[0.039152] (pysdf) Command: {'cmd': ['/usr/bin/cmake', '/home/josue/chair_ws/src/pysdf', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/home/josue/chair_ws/install/pysdf'], 'cwd': '/home/josue/chair_ws/build/pysdf', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'fr_CA:en'), ('USER', 'josue'), ('LC_TIME', 'ln_CD'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/josue/colcon_ws/install/ign_rviz_plugins/lib:/home/josue/colcon_ws/install/ign_rviz_common/lib:/home/josue/ws/install/image_geometry/lib:/home/josue/ws/install/gazebo_msgs/lib:/home/josue/ws/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/josue'), ('OLDPWD', '/home/josue/chair_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ln_CD'), ('SYSTEMD_EXEC_PID', '1560'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/josue/colcon_ws/install:/home/josue/chair_ros2_ws/install:/home/josue/second_ros2_ws/install:/home/josue/ws/install:/home/josue/ros2_ws/install:/home/josue/catkin_ws/install:/home/josue/chair_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'josue'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'josue'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/josue-ThinkPad-T450s:@/tmp/.ICE-unix/1534,unix/josue-ThinkPad-T450s:/tmp/.ICE-unix/1534'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ln_CD'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3689d323_b366_4217_a6dd_42a638d0ff60'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'fr_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ln_CD'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RJJJP2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.403'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/josue/ros2_ws/install/my_robot_controller:/home/josue/chair_ws/install/turtlebot_x:/home/josue/colcon_ws/install/ign_rviz:/home/josue/colcon_ws/install/ign_rviz_plugins:/home/josue/colcon_ws/install/ign_rviz_common:/home/josue/chair_ros2_ws/install/my_robot:/home/josue/second_ros2_ws/install/urdf_tutorial_r2d2:/home/josue/ws/install/vision_opencv:/home/josue/ws/install/opencv_tests:/home/josue/ws/install/image_geometry:/home/josue/ws/install/gazebo_msgs:/home/josue/ws/install/gazebo_dev:/home/josue/ws/install/cv_bridge:/home/josue/catkin_ws/install/my_package:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ln_CD'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ln_CD'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('LC_IDENTIFICATION', 'ln_CD'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/josue/chair_ws/build/pysdf'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/josue/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/josue/ros2_ws/build/my_robot_controller:/home/josue/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages:/home/josue/chair_ros2_ws/build/my_robot:/home/josue/chair_ros2_ws/install/my_robot/lib/python3.10/site-packages:/home/josue/second_ros2_ws/install/urdf_tutorial_r2d2/lib/python3.10/site-packages:/home/josue/ws/build/opencv_tests:/home/josue/ws/install/opencv_tests/lib/python3.10/site-packages:/home/josue/ws/install/image_geometry/lib/python3.10/site-packages:/home/josue/ws/install/gazebo_msgs/lib/python3.10/site-packages:/home/josue/ws/install/cv_bridge/lib/python3.10/site-packages:/home/josue/catkin_ws/install/my_package/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'ln_CD'), ('LC_PAPER', 'ln_CD'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/josue/colcon_ws/install/ign_rviz:/home/josue/colcon_ws/install/ign_rviz_plugins:/home/josue/colcon_ws/install/ign_rviz_common:/home/josue/ws/install/vision_opencv:/home/josue/ws/install/image_geometry:/home/josue/ws/install/gazebo_msgs:/home/josue/ws/install/gazebo_dev:/home/josue/ws/install/cv_bridge')]), 'shell': False}
+[0.099384] (-) TimerEvent: {}
+[0.199773] (-) TimerEvent: {}
+[0.300057] (-) TimerEvent: {}
+[0.325934] (pysdf) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.326345] (pysdf) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[0.326550] (pysdf) StderrLine: {'line': b'  CMake.\n'}
+[0.326697] (pysdf) StderrLine: {'line': b'\n'}
+[0.326838] (pysdf) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[0.326976] (pysdf) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[0.327119] (pysdf) StderrLine: {'line': b'\n'}
+[0.327262] (pysdf) StderrLine: {'line': b'\x1b[0m\n'}
+[0.400180] (-) TimerEvent: {}
+[0.500467] (-) TimerEvent: {}
+[0.600807] (-) TimerEvent: {}
+[0.701213] (-) TimerEvent: {}
+[0.801547] (-) TimerEvent: {}
+[0.901939] (-) TimerEvent: {}
+[1.002294] (-) TimerEvent: {}
+[1.102679] (-) TimerEvent: {}
+[1.203146] (-) TimerEvent: {}
+[1.303907] (-) TimerEvent: {}
+[1.312853] (pysdf) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.404101] (-) TimerEvent: {}
+[1.504615] (-) TimerEvent: {}
+[1.604996] (-) TimerEvent: {}
+[1.705459] (-) TimerEvent: {}
+[1.805913] (-) TimerEvent: {}
+[1.906645] (-) TimerEvent: {}
+[2.007386] (-) TimerEvent: {}
+[2.108029] (-) TimerEvent: {}
+[2.208592] (-) TimerEvent: {}
+[2.309116] (-) TimerEvent: {}
+[2.349899] (pysdf) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.409245] (-) TimerEvent: {}
+[2.425127] (pysdf) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.509388] (-) TimerEvent: {}
+[2.609726] (-) TimerEvent: {}
+[2.685519] (pysdf) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.695731] (pysdf) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.696203] (pysdf) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.707854] (pysdf) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.709827] (-) TimerEvent: {}
+[2.721333] (pysdf) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.809975] (-) TimerEvent: {}
+[2.886770] (pysdf) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.896824] (pysdf) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.897196] (pysdf) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.898091] (pysdf) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.910090] (-) TimerEvent: {}
+[2.949379] (pysdf) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:7 (find_package):\n'}
+[2.949541] (pysdf) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[2.949688] (pysdf) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[2.949769] (pysdf) StderrLine: {'line': b'  CMake did not find one.\n'}
+[2.949842] (pysdf) StderrLine: {'line': b'\n'}
+[2.949913] (pysdf) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[2.949984] (pysdf) StderrLine: {'line': b'  of the following names:\n'}
+[2.950054] (pysdf) StderrLine: {'line': b'\n'}
+[2.950124] (pysdf) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[2.950194] (pysdf) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[2.950262] (pysdf) StderrLine: {'line': b'\n'}
+[2.950331] (pysdf) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[2.950400] (pysdf) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[2.950469] (pysdf) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[2.950539] (pysdf) StderrLine: {'line': b'  installed.\n'}
+[2.950608] (pysdf) StderrLine: {'line': b'\n'}
+[2.950675] (pysdf) StderrLine: {'line': b'\x1b[0m\n'}
+[2.950745] (pysdf) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.950821] (pysdf) StdoutLine: {'line': b'See also "/home/josue/chair_ws/build/pysdf/CMakeFiles/CMakeOutput.log".\n'}
+[2.952923] (pysdf) CommandEnded: {'returncode': 1}
+[3.010193] (-) TimerEvent: {}
+[3.110568] (-) TimerEvent: {}
+[3.114102] (pysdf) JobEnded: {'identifier': 'pysdf', 'rc': 1}
+[3.115224] (turtlebot_x) JobEnded: {'identifier': 'turtlebot_x', 'rc': 'SIGINT'}
+[3.125712] (-) EventReactorShutdown: {}

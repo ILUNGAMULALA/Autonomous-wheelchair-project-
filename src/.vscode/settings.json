@@ -1,0 +1,28 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/josue/chair_ros2_ws/install/chaise_robot/lib/python3.10/site-packages",
+        "/home/josue/second_ros2_ws/install/urdf_tutorial_r2d2/lib/python3.10/site-packages",
+        "/home/josue/catkin_ws/install/my_package/lib/python3.10/site-packages",
+        "/home/josue/ws/build/opencv_tests",
+        "/home/josue/ws/install/opencv_tests/lib/python3.10/site-packages",
+        "/home/josue/ws/install/image_geometry/lib/python3.10/site-packages",
+        "/home/josue/ws/install/gazebo_msgs/lib/python3.10/site-packages",
+        "/home/josue/ws/install/cv_bridge/lib/python3.10/site-packages",
+        "/home/josue/ros2_ws/build/my_robot_controller",
+        "/home/josue/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/opt/ros/iron/lib/python3.10/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/josue/chair_ros2_ws/install/chaise_robot/lib/python3.10/site-packages",
+        "/home/josue/second_ros2_ws/install/urdf_tutorial_r2d2/lib/python3.10/site-packages",
+        "/home/josue/catkin_ws/install/my_package/lib/python3.10/site-packages",
+        "/home/josue/ws/build/opencv_tests",
+        "/home/josue/ws/install/opencv_tests/lib/python3.10/site-packages",
+        "/home/josue/ws/install/image_geometry/lib/python3.10/site-packages",
+        "/home/josue/ws/install/gazebo_msgs/lib/python3.10/site-packages",
+        "/home/josue/ws/install/cv_bridge/lib/python3.10/site-packages",
+        "/home/josue/ros2_ws/build/my_robot_controller",
+        "/home/josue/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/opt/ros/iron/lib/python3.10/site-packages"
+    ]
+}

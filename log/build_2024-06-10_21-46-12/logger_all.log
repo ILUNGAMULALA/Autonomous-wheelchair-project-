@@ -1,0 +1,137 @@
+[0.792s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.793s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x798c92d26260>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x798c92ea3b20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x798c92ea3b20>>)
+[1.018s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.018s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.018s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.018s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.018s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.019s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.019s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/josue/chair_ws'
+[1.019s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.020s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.020s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.020s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.021s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.021s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.021s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.021s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.021s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.111s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.112s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.113s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.114s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.115s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.116s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.117s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.120s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot_x) by extensions ['ignore', 'ignore_ament_install']
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot_x) by extension 'ignore'
+[1.123s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot_x) by extension 'ignore_ament_install'
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot_x) by extensions ['colcon_pkg']
+[1.124s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot_x) by extension 'colcon_pkg'
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot_x) by extensions ['colcon_meta']
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot_x) by extension 'colcon_meta'
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot_x) by extensions ['ros']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot_x) by extension 'ros'
+[1.145s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot_x' with type 'ros.ament_python' and name 'turtlebot_x'
+[1.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.286s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/josue/colcon_ws/install
+[1.288s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/josue/chair_ros2_ws/install
+[1.289s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/josue/second_ros2_ws/install
+[1.292s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/josue/ws/install
+[1.293s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/josue/ros2_ws/install
+[1.294s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/josue/catkin_ws/install
+[1.295s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/josue/chair_ws/install
+[1.301s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 307 installed packages in /opt/ros/iron
+[1.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.620s] Level 5:colcon.colcon_core.verb:set package 'turtlebot_x' build argument 'cmake_args' from command line to 'None'
+[1.621s] Level 5:colcon.colcon_core.verb:set package 'turtlebot_x' build argument 'cmake_target' from command line to 'None'
+[1.621s] Level 5:colcon.colcon_core.verb:set package 'turtlebot_x' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.621s] Level 5:colcon.colcon_core.verb:set package 'turtlebot_x' build argument 'cmake_clean_cache' from command line to 'False'
+[1.621s] Level 5:colcon.colcon_core.verb:set package 'turtlebot_x' build argument 'cmake_clean_first' from command line to 'False'
+[1.621s] Level 5:colcon.colcon_core.verb:set package 'turtlebot_x' build argument 'cmake_force_configure' from command line to 'False'
+[1.621s] Level 5:colcon.colcon_core.verb:set package 'turtlebot_x' build argument 'ament_cmake_args' from command line to 'None'
+[1.622s] Level 5:colcon.colcon_core.verb:set package 'turtlebot_x' build argument 'catkin_cmake_args' from command line to 'None'
+[1.622s] Level 5:colcon.colcon_core.verb:set package 'turtlebot_x' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.623s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot_x' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/josue/chair_ws/build/turtlebot_x', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/josue/chair_ws/install/turtlebot_x', 'merge_install': False, 'path': '/home/josue/chair_ws/src/turtlebot_x', 'symlink_install': True, 'test_result_base': None}
+[1.625s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.629s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.630s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/josue/chair_ws/src/turtlebot_x' with build type 'ament_python'
+[1.630s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot_x', 'ament_prefix_path')
+[1.640s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.642s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/hook/ament_prefix_path.ps1'
+[1.648s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/hook/ament_prefix_path.dsv'
+[1.649s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/hook/ament_prefix_path.sh'
+[1.653s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.653s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.091s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/josue/chair_ws/src/turtlebot_x'
+[3.092s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.093s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.225s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/josue/chair_ws/build/turtlebot_x': PYTHONPATH=/home/josue/chair_ws/build/turtlebot_x/prefix_override:/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/josue/chair_ws/build/turtlebot_x/build --no-deps symlink_data
+[9.857s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot_x', 'pythonpath_develop')
+[9.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josue/chair_ws/build/turtlebot_x/share/turtlebot_x/hook/pythonpath_develop.ps1'
+[9.859s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josue/chair_ws/build/turtlebot_x/share/turtlebot_x/hook/pythonpath_develop.dsv'
+[9.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josue/chair_ws/build/turtlebot_x/share/turtlebot_x/hook/pythonpath_develop.sh'
+[9.877s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/josue/chair_ws/build/turtlebot_x' returned '0': PYTHONPATH=/home/josue/chair_ws/build/turtlebot_x/prefix_override:/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/josue/chair_ws/build/turtlebot_x/build --no-deps symlink_data
+[9.888s] Level 1:colcon.colcon_core.environment:checking '/home/josue/chair_ws/install/turtlebot_x' for CMake module files
+[9.891s] Level 1:colcon.colcon_core.environment:checking '/home/josue/chair_ws/install/turtlebot_x' for CMake config files
+[9.895s] Level 1:colcon.colcon_core.environment:checking '/home/josue/chair_ws/install/turtlebot_x/lib'
+[9.897s] Level 1:colcon.colcon_core.environment:checking '/home/josue/chair_ws/install/turtlebot_x/bin'
+[9.897s] Level 1:colcon.colcon_core.environment:checking '/home/josue/chair_ws/install/turtlebot_x/lib/pkgconfig/turtlebot_x.pc'
+[9.898s] Level 1:colcon.colcon_core.environment:checking '/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages'
+[9.899s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot_x', 'pythonpath')
+[9.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/hook/pythonpath.ps1'
+[9.908s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/hook/pythonpath.dsv'
+[9.908s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/hook/pythonpath.sh'
+[9.910s] Level 1:colcon.colcon_core.environment:checking '/home/josue/chair_ws/install/turtlebot_x/bin'
+[9.910s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot_x)
+[9.911s] INFO:colcon.colcon_core.shell:Creating package script '/home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/package.ps1'
+[9.913s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/package.dsv'
+[9.915s] INFO:colcon.colcon_core.shell:Creating package script '/home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/package.sh'
+[9.917s] INFO:colcon.colcon_core.shell:Creating package script '/home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/package.bash'
+[9.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/package.zsh'
+[9.929s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/josue/chair_ws/install/turtlebot_x/share/colcon-core/packages/turtlebot_x)
+[9.933s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.939s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.941s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.942s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.970s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.971s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.972s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.087s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.087s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/josue/chair_ws/install/local_setup.ps1'
+[10.091s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/josue/chair_ws/install/_local_setup_util_ps1.py'
+[10.096s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/josue/chair_ws/install/setup.ps1'
+[10.107s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/josue/chair_ws/install/local_setup.sh'
+[10.109s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/josue/chair_ws/install/_local_setup_util_sh.py'
+[10.112s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/josue/chair_ws/install/setup.sh'
+[10.124s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/josue/chair_ws/install/local_setup.bash'
+[10.125s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/josue/chair_ws/install/setup.bash'
+[10.136s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/josue/chair_ws/install/local_setup.zsh'
+[10.140s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/josue/chair_ws/install/setup.zsh'

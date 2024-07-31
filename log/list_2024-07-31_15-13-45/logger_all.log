@@ -1,0 +1,56 @@
+[0.358s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/daniel/ATG_projects/chair_ws']
+[0.359s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/daniel/ATG_projects/chair_ws'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7d6394488730>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7d6394447880>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7d6394447880>>, mixin_verb=('list',))
+[0.762s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.762s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.762s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.762s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.762s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.762s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/daniel/ATG_projects/chair_ws'
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.762s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws) by extension 'ignore'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws) by extension 'ignore_ament_install'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws) by extensions ['colcon_pkg']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws) by extension 'colcon_pkg'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws) by extensions ['colcon_meta']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws) by extension 'colcon_meta'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws) by extensions ['ros']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws) by extension 'ros'
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws) by extensions ['cmake', 'python']
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws) by extension 'cmake'
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws) by extension 'python'
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws) by extensions ['python_setup_py']
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws) by extension 'python_setup_py'
+[0.785s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/build) by extension 'ignore'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/build) ignored
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/install) by extension 'ignore'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/install) ignored
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/log) by extension 'ignore'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/log) ignored
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src) by extension 'ignore'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src) by extension 'ignore_ament_install'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src) by extensions ['colcon_pkg']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src) by extension 'colcon_pkg'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src) by extensions ['colcon_meta']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src) by extension 'colcon_meta'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src) by extensions ['ros']
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src) by extension 'ros'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src) by extensions ['cmake', 'python']
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src) by extension 'cmake'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src) by extension 'python'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src) by extensions ['python_setup_py']
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src) by extension 'python_setup_py'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src/turtlebot_x) by extensions ['ignore', 'ignore_ament_install']
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src/turtlebot_x) by extension 'ignore'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src/turtlebot_x) by extension 'ignore_ament_install'
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src/turtlebot_x) by extensions ['colcon_pkg']
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src/turtlebot_x) by extension 'colcon_pkg'
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src/turtlebot_x) by extensions ['colcon_meta']
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src/turtlebot_x) by extension 'colcon_meta'
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src/turtlebot_x) by extensions ['ros']
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(/home/daniel/ATG_projects/chair_ws/src/turtlebot_x) by extension 'ros'
+[0.795s] DEBUG:colcon.colcon_core.package_identification:Package '/home/daniel/ATG_projects/chair_ws/src/turtlebot_x' with type 'ros.ament_python' and name 'turtlebot_x'
+[0.795s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

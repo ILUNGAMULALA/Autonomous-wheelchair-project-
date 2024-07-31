@@ -1,0 +1,109 @@
+[0.000000] (-) TimerEvent: {}
+[0.001845] (turtlebot_x) JobQueued: {'identifier': 'turtlebot_x', 'dependencies': OrderedDict()}
+[0.001989] (turtlebot_x) JobStarted: {'identifier': 'turtlebot_x'}
+[0.097983] (-) TimerEvent: {}
+[0.199124] (-) TimerEvent: {}
+[0.301258] (-) TimerEvent: {}
+[0.402566] (-) TimerEvent: {}
+[0.503513] (-) TimerEvent: {}
+[0.604156] (-) TimerEvent: {}
+[0.705391] (-) TimerEvent: {}
+[0.806539] (-) TimerEvent: {}
+[0.908592] (-) TimerEvent: {}
+[1.010228] (-) TimerEvent: {}
+[1.111253] (-) TimerEvent: {}
+[1.213204] (-) TimerEvent: {}
+[1.313811] (-) TimerEvent: {}
+[1.414821] (-) TimerEvent: {}
+[1.516399] (-) TimerEvent: {}
+[1.617924] (-) TimerEvent: {}
+[1.719932] (-) TimerEvent: {}
+[1.821333] (-) TimerEvent: {}
+[1.922339] (-) TimerEvent: {}
+[2.023551] (-) TimerEvent: {}
+[2.125050] (-) TimerEvent: {}
+[2.225827] (-) TimerEvent: {}
+[2.327161] (-) TimerEvent: {}
+[2.429069] (-) TimerEvent: {}
+[2.532021] (-) TimerEvent: {}
+[2.633895] (-) TimerEvent: {}
+[2.735350] (-) TimerEvent: {}
+[2.836926] (-) TimerEvent: {}
+[2.937550] (-) TimerEvent: {}
+[3.038483] (-) TimerEvent: {}
+[3.139598] (-) TimerEvent: {}
+[3.240703] (-) TimerEvent: {}
+[3.341728] (-) TimerEvent: {}
+[3.443119] (-) TimerEvent: {}
+[3.546374] (-) TimerEvent: {}
+[3.650149] (-) TimerEvent: {}
+[3.700058] (turtlebot_x) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/josue/chair_ws/build/turtlebot_x/build', '--no-deps', 'symlink_data'], 'cwd': '/home/josue/chair_ws/build/turtlebot_x', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'fr_CA:en', 'USER': 'josue', 'LC_TIME': 'ln_CD', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/josue/colcon_ws/install/ign_rviz_plugins/lib:/home/josue/colcon_ws/install/ign_rviz_common/lib:/home/josue/ws/install/image_geometry/lib:/home/josue/ws/install/gazebo_msgs/lib:/home/josue/ws/install/cv_bridge/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'HOME': '/home/josue', 'DESKTOP_SESSION': 'ubuntu', 'GAZEBO_MASTER_URI': 'http://localhost:11345', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ln_CD', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1561', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=760b690276075f2914aaff4066674163', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/josue/colcon_ws/install:/home/josue/chair_ros2_ws/install:/home/josue/second_ros2_ws/install:/home/josue/ws/install:/home/josue/ros2_ws/install:/home/josue/catkin_ws/install:/home/josue/chair_ws/install', 'ROS_DISTRO': 'iron', 'LOGNAME': 'josue', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'josue', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo-11/models:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'PATH': '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/josue-ThinkPad-T450s:@/tmp/.ICE-unix/1561,unix/josue-ThinkPad-T450s:/tmp/.ICE-unix/1561', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ln_CD', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/dca15670_fa04_43d7_98be_32a7359fe0e2', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'fr_CA.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ln_CD', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.BO39O2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.297', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/josue/ros2_ws/install/my_robot_controller:/home/josue/chair_ws/install/turtlebot_x:/home/josue/colcon_ws/install/ign_rviz:/home/josue/colcon_ws/install/ign_rviz_plugins:/home/josue/colcon_ws/install/ign_rviz_common:/home/josue/chair_ros2_ws/install/my_robot:/home/josue/second_ros2_ws/install/urdf_tutorial_r2d2:/home/josue/ws/install/vision_opencv:/home/josue/ws/install/opencv_tests:/home/josue/ws/install/image_geometry:/home/josue/ws/install/gazebo_msgs:/home/josue/ws/install/gazebo_dev:/home/josue/ws/install/cv_bridge:/home/josue/catkin_ws/install/my_package:/opt/ros/iron', 'SHELL': '/bin/bash', 'LC_NAME': 'ln_CD', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ln_CD', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-11:', 'LC_IDENTIFICATION': 'ln_CD', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/josue/chair_ws/build/turtlebot_x', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=760b690276075f2914aaff4066674163', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/home/josue/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/josue/chair_ws/build/turtlebot_x/prefix_override:/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages:/home/josue/ros2_ws/build/my_robot_controller:/home/josue/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/josue/chair_ws/build/turtlebot_x:/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages:/home/josue/chair_ros2_ws/build/my_robot:/home/josue/chair_ros2_ws/install/my_robot/lib/python3.10/site-packages:/home/josue/second_ros2_ws/install/urdf_tutorial_r2d2/lib/python3.10/site-packages:/home/josue/ws/build/opencv_tests:/home/josue/ws/install/opencv_tests/lib/python3.10/site-packages:/home/josue/ws/install/image_geometry/lib/python3.10/site-packages:/home/josue/ws/install/gazebo_msgs/lib/python3.10/site-packages:/home/josue/ws/install/cv_bridge/lib/python3.10/site-packages:/home/josue/catkin_ws/install/my_package/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages', 'LC_NUMERIC': 'ln_CD', 'LC_PAPER': 'ln_CD', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/josue/colcon_ws/install/ign_rviz:/home/josue/colcon_ws/install/ign_rviz_plugins:/home/josue/colcon_ws/install/ign_rviz_common:/home/josue/ws/install/vision_opencv:/home/josue/ws/install/image_geometry:/home/josue/ws/install/gazebo_msgs:/home/josue/ws/install/gazebo_dev:/home/josue/ws/install/cv_bridge'}, 'shell': False}
+[3.750214] (-) TimerEvent: {}
+[3.851614] (-) TimerEvent: {}
+[3.955568] (-) TimerEvent: {}
+[4.059176] (-) TimerEvent: {}
+[4.161827] (-) TimerEvent: {}
+[4.262702] (-) TimerEvent: {}
+[4.363638] (-) TimerEvent: {}
+[4.465031] (-) TimerEvent: {}
+[4.566116] (-) TimerEvent: {}
+[4.667255] (-) TimerEvent: {}
+[4.768264] (-) TimerEvent: {}
+[4.869435] (-) TimerEvent: {}
+[4.970704] (-) TimerEvent: {}
+[5.071367] (-) TimerEvent: {}
+[5.172777] (-) TimerEvent: {}
+[5.273657] (-) TimerEvent: {}
+[5.375020] (-) TimerEvent: {}
+[5.476564] (-) TimerEvent: {}
+[5.577818] (-) TimerEvent: {}
+[5.626989] (turtlebot_x) StdoutLine: {'line': b'running develop\n'}
+[5.627875] (turtlebot_x) StderrLine: {'line': b'/home/josue/.local/lib/python3.10/site-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.\n'}
+[5.628404] (turtlebot_x) StderrLine: {'line': b'!!\n'}
+[5.628846] (turtlebot_x) StderrLine: {'line': b'\n'}
+[5.629242] (turtlebot_x) StderrLine: {'line': b'        ********************************************************************************\n'}
+[5.629693] (turtlebot_x) StderrLine: {'line': b'        Please avoid running ``setup.py`` and ``easy_install``.\n'}
+[5.629956] (turtlebot_x) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[5.630853] (turtlebot_x) StderrLine: {'line': b'        standards-based tools.\n'}
+[5.631573] (turtlebot_x) StderrLine: {'line': b'\n'}
+[5.632244] (turtlebot_x) StderrLine: {'line': b'        See https://github.com/pypa/setuptools/issues/917 for details.\n'}
+[5.632793] (turtlebot_x) StderrLine: {'line': b'        ********************************************************************************\n'}
+[5.633431] (turtlebot_x) StderrLine: {'line': b'\n'}
+[5.634035] (turtlebot_x) StderrLine: {'line': b'!!\n'}
+[5.634335] (turtlebot_x) StderrLine: {'line': b'  easy_install.initialize_options(self)\n'}
+[5.678187] (-) TimerEvent: {}
+[5.780948] (-) TimerEvent: {}
+[5.881728] (-) TimerEvent: {}
+[5.982256] (-) TimerEvent: {}
+[6.083302] (-) TimerEvent: {}
+[6.184089] (-) TimerEvent: {}
+[6.284632] (-) TimerEvent: {}
+[6.385673] (-) TimerEvent: {}
+[6.486143] (-) TimerEvent: {}
+[6.586546] (-) TimerEvent: {}
+[6.686973] (-) TimerEvent: {}
+[6.787590] (-) TimerEvent: {}
+[6.888749] (-) TimerEvent: {}
+[6.955644] (turtlebot_x) StdoutLine: {'line': b'running egg_info\n'}
+[6.989079] (-) TimerEvent: {}
+[7.043520] (turtlebot_x) StdoutLine: {'line': b'writing turtlebot_x.egg-info/PKG-INFO\n'}
+[7.051820] (turtlebot_x) StdoutLine: {'line': b'writing dependency_links to turtlebot_x.egg-info/dependency_links.txt\n'}
+[7.053291] (turtlebot_x) StdoutLine: {'line': b'writing entry points to turtlebot_x.egg-info/entry_points.txt\n'}
+[7.063601] (turtlebot_x) StdoutLine: {'line': b'writing requirements to turtlebot_x.egg-info/requires.txt\n'}
+[7.064092] (turtlebot_x) StdoutLine: {'line': b'writing top-level names to turtlebot_x.egg-info/top_level.txt\n'}
+[7.089166] (-) TimerEvent: {}
+[7.189873] (-) TimerEvent: {}
+[7.205312] (turtlebot_x) StdoutLine: {'line': b"reading manifest file 'turtlebot_x.egg-info/SOURCES.txt'\n"}
+[7.208406] (turtlebot_x) StdoutLine: {'line': b"writing manifest file 'turtlebot_x.egg-info/SOURCES.txt'\n"}
+[7.289975] (-) TimerEvent: {}
+[7.290781] (turtlebot_x) StdoutLine: {'line': b'running build_ext\n'}
+[7.291260] (turtlebot_x) StdoutLine: {'line': b'Creating /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot-x.egg-link (link to .)\n'}
+[7.293194] (turtlebot_x) StdoutLine: {'line': b'Installing driving_node script to /home/josue/chair_ws/install/turtlebot_x/lib/turtlebot_x\n'}
+[7.293682] (turtlebot_x) StdoutLine: {'line': b'Installing video_subscriber script to /home/josue/chair_ws/install/turtlebot_x/lib/turtlebot_x\n'}
+[7.294358] (turtlebot_x) StdoutLine: {'line': b'\n'}
+[7.294639] (turtlebot_x) StdoutLine: {'line': b'Installed /home/josue/chair_ws/build/turtlebot_x\n'}
+[7.295066] (turtlebot_x) StdoutLine: {'line': b'running symlink_data\n'}
+[7.390128] (-) TimerEvent: {}
+[7.426917] (turtlebot_x) CommandEnded: {'returncode': 0}
+[7.484826] (turtlebot_x) JobEnded: {'identifier': 'turtlebot_x', 'rc': 0}
+[7.488140] (-) EventReactorShutdown: {}

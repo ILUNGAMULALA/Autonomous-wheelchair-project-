@@ -1,0 +1,31 @@
+[1.768s] Invoking command in '/home/josue/chair_ws/build/turtlebot_x': PYTHONPATH=/home/josue/chair_ws/build/turtlebot_x/prefix_override:/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/josue/chair_ws/build/turtlebot_x/build --no-deps symlink_data
+[2.159s] running develop
+[2.195s] /home/josue/.local/lib/python3.10/site-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[2.196s] !!
+[2.196s] 
+[2.196s]         ********************************************************************************
+[2.196s]         Please avoid running ``setup.py`` and ``easy_install``.
+[2.196s]         Instead, use pypa/build, pypa/installer or other
+[2.196s]         standards-based tools.
+[2.196s] 
+[2.197s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[2.197s]         ********************************************************************************
+[2.197s] 
+[2.197s] !!
+[2.197s]   easy_install.initialize_options(self)
+[2.519s] running egg_info
+[2.537s] writing turtlebot_x.egg-info/PKG-INFO
+[2.538s] writing dependency_links to turtlebot_x.egg-info/dependency_links.txt
+[2.538s] writing entry points to turtlebot_x.egg-info/entry_points.txt
+[2.539s] writing requirements to turtlebot_x.egg-info/requires.txt
+[2.539s] writing top-level names to turtlebot_x.egg-info/top_level.txt
+[2.578s] reading manifest file 'turtlebot_x.egg-info/SOURCES.txt'
+[2.593s] writing manifest file 'turtlebot_x.egg-info/SOURCES.txt'
+[2.614s] running build_ext
+[2.614s] Creating /home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages/turtlebot-x.egg-link (link to .)
+[2.615s] Installing driving_node script to /home/josue/chair_ws/install/turtlebot_x/lib/turtlebot_x
+[2.615s] Installing video_subscriber script to /home/josue/chair_ws/install/turtlebot_x/lib/turtlebot_x
+[2.615s] 
+[2.615s] Installed /home/josue/chair_ws/build/turtlebot_x
+[2.615s] running symlink_data
+[2.666s] Invoked command in '/home/josue/chair_ws/build/turtlebot_x' returned '0': PYTHONPATH=/home/josue/chair_ws/build/turtlebot_x/prefix_override:/home/josue/chair_ws/install/turtlebot_x/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/josue/chair_ws/build/turtlebot_x/build --no-deps symlink_data

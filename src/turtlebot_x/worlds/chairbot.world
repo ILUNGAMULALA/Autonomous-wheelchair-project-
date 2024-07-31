@@ -1,0 +1,774 @@
+<sdf version='1.7'>
+  <world name='default'>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    <model name='ground_plane'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <audio>
+      <device>default</device>
+    </audio>
+    <wind/>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <model name='chairbot'>
+      <pose>-1.80475 0.565639 0.5 0 -0 0</pose>
+      <link name='base_link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>-0.113799 0.000178 0.138094 0 -0 0</pose>
+          <mass>54.4806</mass>
+          <inertia>
+            <ixx>2.37605</ixx>
+            <ixy>-0.000504778</ixy>
+            <ixz>0.73779</ixz>
+            <iyy>2.8287</iyy>
+            <iyz>0.000108266</iyz>
+            <izz>2.86063</izz>
+          </inertia>
+        </inertial>
+        <collision name='base_link_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://chair/meshes/base_link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0</mu>
+                <mu2>0</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>0</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1e+11</kd>
+                <max_vel>-1</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+            </contact>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='base_link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://chair/meshes/base_link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://chair/materials/scripts/chairbot.material</uri>
+              <name>chairbot/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <gravity>1</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <joint name='pneu1_joint' type='revolute'>
+        <pose relative_to='base_link'>0.21158 -0.3 -0.29144 0 -0 0</pose>
+        <parent>base_link</parent>
+        <child>pneu1_Link</child>
+        <axis>
+          <xyz>0 -1 0</xyz>
+          <limit>
+            <effort>1</effort>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='pneu1_Link'>
+        <pose relative_to='pneu1_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0.035001 -0 0 -0 0</pose>
+          <mass>3.627</mass>
+          <inertia>
+            <ixx>0.064382</ixx>
+            <ixy>-4.7098e-09</ixy>
+            <ixz>3.4414e-07</ixz>
+            <iyy>0.12611</iyy>
+            <iyz>8.1766e-09</iyz>
+            <izz>0.064383</izz>
+          </inertia>
+        </inertial>
+        <collision name='pneu1_Link_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://chair/meshes/pneu1_Link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>0</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1e+11</kd>
+                <max_vel>-1</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+            </contact>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='pneu1_Link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://chair/meshes/pneu1_Link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://chair/materials/scripts/chairbot.material</uri>
+              <name>chairbot/Orange</name>
+            </script>
+          </material>
+        </visual>
+        <gravity>1</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <joint name='pneu2_joint' type='revolute'>
+        <pose relative_to='base_link'>0.21158 0.3 -0.29144 0 -0 0</pose>
+        <parent>base_link</parent>
+        <child>pneu2_Link</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <effort>1</effort>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='pneu2_Link'>
+        <pose relative_to='pneu2_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 -0.034999 -0 0 -0 0</pose>
+          <mass>3.627</mass>
+          <inertia>
+            <ixx>0.064382</ixx>
+            <ixy>-9.2929e-09</ixy>
+            <ixz>3.9067e-08</ixz>
+            <iyy>0.12611</iyy>
+            <iyz>4.584e-09</iyz>
+            <izz>0.064383</izz>
+          </inertia>
+        </inertial>
+        <collision name='pneu2_Link_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://chair/meshes/pneu2_Link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>0</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1e+11</kd>
+                <max_vel>-1</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+            </contact>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='pneu2_Link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://chair/meshes/pneu2_Link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://chair/materials/scripts/chairbot.material</uri>
+              <name>chairbot/Orange</name>
+            </script>
+          </material>
+        </visual>
+        <gravity>1</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <joint name='pneu3_joint' type='revolute'>
+        <pose relative_to='base_link'>-0.26967 0.33379 -0.38574 0 -0 0</pose>
+        <parent>base_link</parent>
+        <child>pneu3_Link</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <effort>1</effort>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='pneu3_Link'>
+        <pose relative_to='pneu3_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>-0.000333 -0.05 -0.000363 0 -0 0</pose>
+          <mass>2.8006</mass>
+          <inertia>
+            <ixx>0.020147</ixx>
+            <ixy>-1.4565e-09</ixy>
+            <ixz>7.4949e-07</ixz>
+            <iyy>0.034868</iyy>
+            <iyz>7.7795e-09</iyz>
+            <izz>0.020147</izz>
+          </inertia>
+        </inertial>
+        <collision name='pneu3_Link_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://chair/meshes/pneu3_Link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>0</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1e+11</kd>
+                <max_vel>-1</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+            </contact>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='pneu3_Link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://chair/meshes/pneu3_Link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://chair/materials/scripts/chairbot.material</uri>
+              <name>chairbot/Orange</name>
+            </script>
+          </material>
+        </visual>
+        <gravity>1</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <joint name='pneu4_joint' type='revolute'>
+        <pose relative_to='base_link'>-0.26967 -0.3338 -0.38574 0 -0 0</pose>
+        <parent>base_link</parent>
+        <child>pneu4_Link</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <effort>1</effort>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+          <dynamics>
+            <damping>0.1</damping>
+            <friction>0</friction>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+          </dynamics>
+          <use_parent_model_frame>1</use_parent_model_frame>
+        </axis>
+      </joint>
+      <link name='pneu4_Link'>
+        <pose relative_to='pneu4_joint'>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>-0.000333 0.05 -0.000363 0 -0 0</pose>
+          <mass>2.8006</mass>
+          <inertia>
+            <ixx>0.020147</ixx>
+            <ixy>-1.4565e-09</ixy>
+            <ixz>7.4949e-07</ixz>
+            <iyy>0.034868</iyy>
+            <iyz>7.7795e-09</iyz>
+            <izz>0.020147</izz>
+          </inertia>
+        </inertial>
+        <collision name='pneu4_Link_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://chair/meshes/pneu4_Link.STL</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <bounce>
+              <restitution_coefficient>0</restitution_coefficient>
+              <threshold>0</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1e+13</kp>
+                <kd>1e+11</kd>
+                <max_vel>-1</max_vel>
+                <min_depth>0</min_depth>
+              </ode>
+            </contact>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='pneu4_Link_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://chair/meshes/pneu4_Link.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://chair/materials/scripts/chairbot.material</uri>
+              <name>chairbot/Orange</name>
+            </script>
+          </material>
+        </visual>
+        <gravity>1</gravity>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <enable_wind>0</enable_wind>
+      </link>
+      <link name='link'>
+        <gravity>0</gravity>
+        <pose>0.128 0.27 0.27 0 -0 0</pose>
+        <inertial>
+          <mass>0.1</mass>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.05 0.05 0.05</size>
+            </box>
+          </geometry>
+        </visual>
+        <sensor name='camera' type='camera'>
+          <camera>
+            <horizontal_fov>1.047</horizontal_fov>
+            <image>
+              <width>320</width>
+              <height>240</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>100</far>
+            </clip>
+          </camera>
+          <plugin name='camera_driver' filename='libgazebo_ros_camera.so'>
+            <ros/>
+          </plugin>
+          <always_on>1</always_on>
+          <update_rate>30</update_rate>
+          <visualize>1</visualize>
+          <output_type>sensor_msgs/camera</output_type>
+          <frame_name>base_scan</frame_name>
+        </sensor>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='camera' type='fixed'>
+        <parent>base_link</parent>
+        <child>link</child>
+        <axis>
+          <xyz>0.128 -0.065 0.104</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      <link name='base_scan'>
+        <inertial>
+          <pose>0.069 0.27 -0.2 0 -0 0</pose>
+          <inertia>
+            <ixx>0.001</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.001</iyy>
+            <iyz>0</iyz>
+            <izz>0.001</izz>
+          </inertia>
+          <mass>0.114</mass>
+        </inertial>
+        <collision name='lidar_sensor_collision'>
+          <pose>-0.052 0 0.111 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.0508</radius>
+              <length>0.055</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='lidar_sensor_visual'>
+          <pose>-0.064 0 -0.42 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://turtlebot3_waffle/meshes/lds.dae</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <sensor name='hls_lfcd_lds' type='ray'>
+          <always_on>1</always_on>
+          <visualize>1</visualize>
+          <pose>-0.064 0 -0.42 0 -0 0</pose>
+          <update_rate>5</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>360</samples>
+                <resolution>1</resolution>
+                <min_angle>0</min_angle>
+                <max_angle>6.28</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>1</samples>
+                <min_angle>0</min_angle>
+                <max_angle>0</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.6</min>
+              <max>15</max>
+              <resolution>0.015</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name='turtlebot3_laserscan' filename='libgazebo_ros_ray_sensor.so'>
+            <ros>
+              <remapping>~/out:=scan</remapping>
+            </ros>
+            <output_type>sensor_msgs/LaserScan</output_type>
+            <frame_name>base_scan</frame_name>
+          </plugin>
+        </sensor>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <joint name='lidar' type='fixed'>
+        <parent>base_link</parent>
+        <child>base_scan</child>
+        <axis>
+          <xyz>0.064 -0.065 -0.41</xyz>
+          <limit>
+            <lower>-1e+16</lower>
+            <upper>1e+16</upper>
+          </limit>
+        </axis>
+      </joint>
+      <plugin name='turtlebot3_diff_drive' filename='libgazebo_ros_diff_drive.so'>
+        <ros>
+          <remapping>/tf:=tf</remapping>
+        </ros>
+        <update_rate>30</update_rate>
+        <left_joint>pneu1_joint</left_joint>
+        <right_joint>pneu2_joint</right_joint>
+        <back_left_joint>pneu3_joint</back_left_joint>
+        <back_right_joint>pneu4_joint</back_right_joint>
+        <wheel_separation>0.287</wheel_separation>
+        <wheel_diameter>0.066</wheel_diameter>
+        <max_wheel_torque>20</max_wheel_torque>
+        <max_wheel_acceleration>1.0</max_wheel_acceleration>
+        <command_topic>cmd_vel</command_topic>
+        <publish_odom>1</publish_odom>
+        <publish_odom_tf>1</publish_odom_tf>
+        <publish_wheel_tf>1</publish_wheel_tf>
+        <odometry_topic>odom</odometry_topic>
+        <odometry_frame>odom</odometry_frame>
+        <robot_base_frame>base_link</robot_base_frame>
+      </plugin>
+      <plugin name='turtlebot3_joint_state' filename='libgazebo_ros_joint_state_publisher.so'>
+        <ros>
+          <remapping>~/out:=joint_states</remapping>
+        </ros>
+        <update_rate>30</update_rate>
+        <joint_name>pneu1_joint</joint_name>
+        <joint_name>pneu2_joint</joint_name>
+        <joint_name>pneu3_joint</joint_name>
+        <joint_name>pneu4_joint</joint_name>
+      </plugin>
+    </model>
+    <state world_name='default'>
+      <sim_time>379 37000000</sim_time>
+      <real_time>682 970828554</real_time>
+      <wall_time>1719749698 316675089</wall_time>
+      <iterations>379037</iterations>
+      <model name='chairbot'>
+        <pose>-1.79767 0.566324 0.548865 -0.000477 -0.011439 -0.000316</pose>
+        <scale>1 1 1</scale>
+        <link name='base_link'>
+          <pose>-1.79767 0.566324 0.548865 -0.000477 -0.011439 -0.000316</pose>
+          <velocity>0.000539 -4.5e-05 -1.6e-05 -0.000104 3.7e-05 -0.001352</velocity>
+          <acceleration>0.238698 -0.008648 -0.011837 -0.033641 0.005293 -0.271589</acceleration>
+          <wrench>13.0044 -0.471158 -0.644897 0 -0 0</wrench>
+        </link>
+        <link name='base_scan'>
+          <pose>-1.79767 0.566325 0.548865 -0.000477 -0.011439 -0.000316</pose>
+          <velocity>0.000575 -5.4e-05 1.3e-05 -0.000114 6e-05 -0.001344</velocity>
+          <acceleration>0.318414 -0.083699 -0.026556 -0.022662 0.011815 -0.264845</acceleration>
+          <wrench>0.036299 -0.009542 -0.003027 0 -0 0</wrench>
+        </link>
+        <link name='link'>
+          <pose>-1.67268 0.836414 0.820183 -0.000477 -0.011439 -0.000316</pose>
+          <velocity>0.000918 -0.000189 -4.6e-05 -0.000103 3.4e-05 -0.001361</velocity>
+          <acceleration>0.314499 -0.071044 -0.022231 -0.032494 0.005913 -0.275696</acceleration>
+          <wrench>0.03145 -0.007104 -0.002223 0 -0 0</wrench>
+        </link>
+        <link name='pneu1_Link'>
+          <pose>-1.58286 0.266117 0.260008 -0.000482 -0.026 -0.000309</pose>
+          <velocity>0.000125 -0.00029 -3.1e-05 0.001127 0.000684 -0.00134</velocity>
+          <acceleration>0.161607 -0.088744 0.002636 0.333663 0.626343 -0.269885</acceleration>
+          <wrench>0.58615 -0.321875 0.009559 0 -0 0</wrench>
+        </link>
+        <link name='pneu2_Link'>
+          <pose>-1.58267 0.866117 0.259721 -0.00048 0.120221 -0.000379</pose>
+          <velocity>0.000936 -0.000383 -6.3e-05 -0.00014 -1e-06 -0.001353</velocity>
+          <acceleration>0.308488 -0.116092 -0.024425 -0.038944 -0.00015 -0.274401</acceleration>
+          <wrench>1.11889 -0.421064 -0.088591 0 -0 0</wrench>
+        </link>
+        <link name='pneu3_Link'>
+          <pose>-2.0628 0.900012 0.159907 -0.000508 0.071679 -0.000356</pose>
+          <velocity>0.00099 0.000205 -0.000105 -0.001219 0.005904 -0.001192</velocity>
+          <acceleration>0.309062 0.011703 -0.020056 3.05553 1.18603 2.84</acceleration>
+          <wrench>0.865559 0.032775 -0.056169 0 -0 0</wrench>
+        </link>
+        <link name='pneu4_Link'>
+          <pose>-2.06302 0.232424 0.160224 -0.000475 0.059129 -0.000349</pose>
+          <velocity>7e-05 0.000212 9.2e-05 -0.001333 0.000942 -0.001345</velocity>
+          <acceleration>0.155668 0.013019 -0.003663 -0.083064 0.990944 -0.276697</acceleration>
+          <wrench>0.435964 0.03646 -0.010257 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ground_plane'>
+        <pose>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='sun'>
+        <pose>0 0 10 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>-0.50951 0.348847 9.2899 -1.1e-05 1.5698 2.89218</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+  </world>
+</sdf>

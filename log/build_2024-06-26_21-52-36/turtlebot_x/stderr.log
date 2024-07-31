@@ -1,0 +1,14 @@
+/home/josue/.local/lib/python3.10/site-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` and ``easy_install``.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://github.com/pypa/setuptools/issues/917 for details.
+        ********************************************************************************
+
+!!
+  easy_install.initialize_options(self)
+error: [Errno 2] No such file or directory: '/home/josue/chair_ws/install/turtlebot_x/share/turtlebot_x/launch/chairbot_simulation_launch.py'
